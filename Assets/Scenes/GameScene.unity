@@ -135,8 +135,9 @@ GameObject:
   - component: {fileID: 845153130}
   - component: {fileID: 845153129}
   - component: {fileID: 845153128}
+  - component: {fileID: 845153132}
   m_Layer: 0
-  m_Name: Ground
+  m_Name: Planet
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -220,6 +221,19 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &845153132
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 845153127}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eaa89c1dd659d2949857a21876c8d113, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gravity: -12
 --- !u!1 &1106140096
 GameObject:
   m_ObjectHideFlags: 0
@@ -411,6 +425,7 @@ GameObject:
   - component: {fileID: 1632164269}
   - component: {fileID: 1632164268}
   - component: {fileID: 1632164267}
+  - component: {fileID: 1632164274}
   - component: {fileID: 1632164273}
   m_Layer: 0
   m_Name: Player
@@ -527,4 +542,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1d3e982a3531ed542b1bea9a9a29f616, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _speed: 15
+  _speed: 10
+--- !u!114 &1632164274
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1632164266}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 470b2924b436bad43bfb3379dbf9bc9b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  attractorPlanet: {fileID: 845153132}
